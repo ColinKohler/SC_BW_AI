@@ -1,9 +1,65 @@
-﻿Build started 6/13/2015 5:43:30 PM.
+﻿Build started 6/13/2015 9:49:19 PM.
      1>Project "C:\Users\colin_000\Documents\GitHub\SC_BW_AI\Nagglfar\Nagglfar\Nagglfar.vcxproj" on node 2 (Build target(s)).
-     1>Link:
-         Nagglfar.vcxproj -> C:\Users\colin_000\Documents\GitHub\SC_BW_AI\Nagglfar\Debug\Nagglfar.dll
-     1>Done Building Project "C:\Users\colin_000\Documents\GitHub\SC_BW_AI\Nagglfar\Nagglfar\Nagglfar.vcxproj" (Build target(s)).
+     1>ClCompile:
+         D:\Visual Studio\VC\bin\CL.exe /c /I"C:\Program Files (x86)\BWAPI\include" /Zi /nologo /W3 /WX- /sdl- /MP /Od /Oy- /D NOMINMAX /D WIN32 /D _WINDLL /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt base\BulidingManager.cpp base\ProductionManager.cpp base\WorkerManager.cpp CombatCommander.cpp GameCommander.cpp NagglfarModule.cpp ScoutManager.cpp
+         BulidingManager.cpp
+         ProductionManager.cpp
+         WorkerManager.cpp
+         CombatCommander.cpp
+         GameCommander.cpp
+         NagglfarModule.cpp
+         ScoutManager.cpp
+       Link:
+         D:\Visual Studio\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\colin_000\Documents\GitHub\SC_BW_AI\Nagglfar\Debug\Nagglfar.dll" /INCREMENTAL:NO /NOLOGO /LIBPATH:"C:\Program Files (x86)\BWAPI\lib" BWAPI.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\colin_000\Documents\GitHub\SC_BW_AI\Nagglfar\Debug\Nagglfar.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"Debug\Nagglfar.lib" /MACHINE:X86 /SAFESEH /DLL Debug\BulidingManager.obj
+         Debug\ProductionManager.obj
+         Debug\WorkerManager.obj
+         Debug\CombatCommander.obj
+         Debug\GameCommander.obj
+         Debug\NagglfarModule.obj
+         Debug\ScoutManager.obj
+         BWAPI.lib(Game.obj) : MSIL .netmodule or module compiled with /GL found; restarting link with /LTCG; add /LTCG to the link command line to improve linker performance
+     1>BWAPI.lib(Game.obj) : error LNK2038: mismatch detected for '_ITERATOR_DEBUG_LEVEL': value '0' doesn't match value '2' in NagglfarModule.obj
+     1>BWAPI.lib(Game.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MD_DynamicRelease' doesn't match value 'MDd_DynamicDebug' in NagglfarModule.obj
+     1>BWAPI.lib(Race.obj) : error LNK2038: mismatch detected for '_ITERATOR_DEBUG_LEVEL': value '0' doesn't match value '2' in NagglfarModule.obj
+     1>BWAPI.lib(Race.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MD_DynamicRelease' doesn't match value 'MDd_DynamicDebug' in NagglfarModule.obj
+     1>BWAPI.lib(DamageType.obj) : error LNK2038: mismatch detected for '_ITERATOR_DEBUG_LEVEL': value '0' doesn't match value '2' in NagglfarModule.obj
+     1>BWAPI.lib(DamageType.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MD_DynamicRelease' doesn't match value 'MDd_DynamicDebug' in NagglfarModule.obj
+     1>BWAPI.lib(Unitset.obj) : error LNK2038: mismatch detected for '_ITERATOR_DEBUG_LEVEL': value '0' doesn't match value '2' in NagglfarModule.obj
+     1>BWAPI.lib(Unitset.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MD_DynamicRelease' doesn't match value 'MDd_DynamicDebug' in NagglfarModule.obj
+     1>BWAPI.lib(Error.obj) : error LNK2038: mismatch detected for '_ITERATOR_DEBUG_LEVEL': value '0' doesn't match value '2' in NagglfarModule.obj
+     1>BWAPI.lib(Error.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MD_DynamicRelease' doesn't match value 'MDd_DynamicDebug' in NagglfarModule.obj
+     1>BWAPI.lib(Position.obj) : error LNK2038: mismatch detected for '_ITERATOR_DEBUG_LEVEL': value '0' doesn't match value '2' in NagglfarModule.obj
+     1>BWAPI.lib(Position.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MD_DynamicRelease' doesn't match value 'MDd_DynamicDebug' in NagglfarModule.obj
+     1>BWAPI.lib(UnitType.obj) : error LNK2038: mismatch detected for '_ITERATOR_DEBUG_LEVEL': value '0' doesn't match value '2' in NagglfarModule.obj
+     1>BWAPI.lib(UnitType.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MD_DynamicRelease' doesn't match value 'MDd_DynamicDebug' in NagglfarModule.obj
+     1>BWAPI.lib(Filters.obj) : error LNK2038: mismatch detected for '_ITERATOR_DEBUG_LEVEL': value '0' doesn't match value '2' in NagglfarModule.obj
+     1>BWAPI.lib(Filters.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MD_DynamicRelease' doesn't match value 'MDd_DynamicDebug' in NagglfarModule.obj
+     1>BWAPI.lib(WeaponType.obj) : error LNK2038: mismatch detected for '_ITERATOR_DEBUG_LEVEL': value '0' doesn't match value '2' in NagglfarModule.obj
+     1>BWAPI.lib(WeaponType.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MD_DynamicRelease' doesn't match value 'MDd_DynamicDebug' in NagglfarModule.obj
+     1>BWAPI.lib(Player.obj) : error LNK2038: mismatch detected for '_ITERATOR_DEBUG_LEVEL': value '0' doesn't match value '2' in NagglfarModule.obj
+     1>BWAPI.lib(Player.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MD_DynamicRelease' doesn't match value 'MDd_DynamicDebug' in NagglfarModule.obj
+     1>BWAPI.lib(PositionUnit.obj) : error LNK2038: mismatch detected for '_ITERATOR_DEBUG_LEVEL': value '0' doesn't match value '2' in NagglfarModule.obj
+     1>BWAPI.lib(PositionUnit.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MD_DynamicRelease' doesn't match value 'MDd_DynamicDebug' in NagglfarModule.obj
+     1>BWAPI.lib(Unit.obj) : error LNK2038: mismatch detected for '_ITERATOR_DEBUG_LEVEL': value '0' doesn't match value '2' in NagglfarModule.obj
+     1>BWAPI.lib(Unit.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MD_DynamicRelease' doesn't match value 'MDd_DynamicDebug' in NagglfarModule.obj
+     1>BWAPI.lib(UnitCommand.obj) : error LNK2038: mismatch detected for '_ITERATOR_DEBUG_LEVEL': value '0' doesn't match value '2' in NagglfarModule.obj
+     1>BWAPI.lib(UnitCommand.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MD_DynamicRelease' doesn't match value 'MDd_DynamicDebug' in NagglfarModule.obj
+     1>BWAPI.lib(UpgradeType.obj) : error LNK2038: mismatch detected for '_ITERATOR_DEBUG_LEVEL': value '0' doesn't match value '2' in NagglfarModule.obj
+     1>BWAPI.lib(UpgradeType.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MD_DynamicRelease' doesn't match value 'MDd_DynamicDebug' in NagglfarModule.obj
+     1>BWAPI.lib(TechType.obj) : error LNK2038: mismatch detected for '_ITERATOR_DEBUG_LEVEL': value '0' doesn't match value '2' in NagglfarModule.obj
+     1>BWAPI.lib(TechType.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MD_DynamicRelease' doesn't match value 'MDd_DynamicDebug' in NagglfarModule.obj
+     1>BWAPI.lib(UnitSizeType.obj) : error LNK2038: mismatch detected for '_ITERATOR_DEBUG_LEVEL': value '0' doesn't match value '2' in NagglfarModule.obj
+     1>BWAPI.lib(UnitSizeType.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MD_DynamicRelease' doesn't match value 'MDd_DynamicDebug' in NagglfarModule.obj
+     1>BWAPI.lib(ExplosionType.obj) : error LNK2038: mismatch detected for '_ITERATOR_DEBUG_LEVEL': value '0' doesn't match value '2' in NagglfarModule.obj
+     1>BWAPI.lib(ExplosionType.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MD_DynamicRelease' doesn't match value 'MDd_DynamicDebug' in NagglfarModule.obj
+     1>BWAPI.lib(Order.obj) : error LNK2038: mismatch detected for '_ITERATOR_DEBUG_LEVEL': value '0' doesn't match value '2' in NagglfarModule.obj
+     1>BWAPI.lib(Order.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MD_DynamicRelease' doesn't match value 'MDd_DynamicDebug' in NagglfarModule.obj
+     1>BWAPI.lib(UnitCommandType.obj) : error LNK2038: mismatch detected for '_ITERATOR_DEBUG_LEVEL': value '0' doesn't match value '2' in NagglfarModule.obj
+     1>BWAPI.lib(UnitCommandType.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MD_DynamicRelease' doesn't match value 'MDd_DynamicDebug' in NagglfarModule.obj
+     1>LINK : warning LNK4098: defaultlib 'MSVCRT' conflicts with use of other libs; use /NODEFAULTLIB:library
+     1>C:\Users\colin_000\Documents\GitHub\SC_BW_AI\Nagglfar\Debug\Nagglfar.dll : fatal error LNK1319: 38 mismatches detected
+     1>Done Building Project "C:\Users\colin_000\Documents\GitHub\SC_BW_AI\Nagglfar\Nagglfar\Nagglfar.vcxproj" (Build target(s)) -- FAILED.
 
-Build succeeded.
+Build FAILED.
 
-Time Elapsed 00:00:00.03
+Time Elapsed 00:00:01.81

@@ -1,0 +1,22 @@
+﻿Build started 6/13/2015 9:50:03 PM.
+     1>Project "C:\Users\colin_000\Documents\GitHub\SC_BW_AI\Nagglfar\Nagglfar\Nagglfar.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         D:\Visual Studio\VC\bin\CL.exe /c /I"C:\Program Files (x86)\BWAPI\include" /Zi /nologo /W3 /WX- /sdl- /MP /O2 /Oi /Oy- /GL /D NOMINMAX /D WIN32 /D _WINDLL /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt CombatCommander.cpp ScoutManager.cpp
+         CombatCommander.cpp
+         ScoutManager.cpp
+       Link:
+         D:\Visual Studio\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\colin_000\Documents\GitHub\SC_BW_AI\Nagglfar\Release\Nagglfar.dll" /INCREMENTAL:NO /NOLOGO /LIBPATH:"C:\Program Files (x86)\BWAPI\lib" BWAPI.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\colin_000\Documents\GitHub\SC_BW_AI\Nagglfar\Release\Nagglfar.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"Release\Nagglfar.lib" /MACHINE:X86 /SAFESEH /DLL Release\BulidingManager.obj
+         Release\ProductionManager.obj
+         Release\WorkerManager.obj
+         Release\CombatCommander.obj
+         Release\GameCommander.obj
+         Release\NagglfarModule.obj
+         Release\ScoutManager.obj
+         Generating code
+         Finished generating code
+         Nagglfar.vcxproj -> C:\Users\colin_000\Documents\GitHub\SC_BW_AI\Nagglfar\Release\Nagglfar.dll
+     1>Done Building Project "C:\Users\colin_000\Documents\GitHub\SC_BW_AI\Nagglfar\Nagglfar\Nagglfar.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:04.39
