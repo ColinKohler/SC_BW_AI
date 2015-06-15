@@ -1,13 +1,13 @@
 #pragma once
 
 #include <BWAPI.h>
-//#include <BWTA.h>
+#include <BWTA.h>
 #include "GameCommander.h"
 #include <windows.h>
 
 namespace NagglfarBot {
 
-	class Nagglfar : public BWAPI::AIModule {
+	class NagglfarModule : public BWAPI::AIModule {
 		GameCommander gameCommander;
 
 	public:

@@ -1,3 +1,4 @@
+#include "Common.h"
 #include "CombatCommander.h"
 #include "base/WorkerManager.h"
 #include "base/ProductionManager.h"

@@ -13,6 +13,7 @@
   <PropertyGroup Label="Globals">
     <ProjectGuid>{B1210F9B-04DE-48A4-8E4C-CF7B1D13AEDA}</ProjectGuid>
     <RootNamespace>Nagglfar</RootNamespace>
+    <ProjectName>NagglfarModule</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -51,7 +52,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>false</SDLCheck>
-      <AdditionalIncludeDirectories>C:\Program Files %28x86%29\BWAPI\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\colin_000\Documents\GitHub\BWTA\include;C:\Program Files %28x86%29\BWAPI\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <PreprocessorDefinitions>NOMINMAX;WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -63,7 +64,7 @@
       <SubSystem>Windows</SubSystem>
       <ImportLibrary>$(IntDir)$(TargetName).lib</ImportLibrary>
       <ImageHasSafeExceptionHandlers>true</ImageHasSafeExceptionHandlers>
-      <AdditionalLibraryDirectories>C:\Program Files %28x86%29\BWAPI\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:\Users\colin_000\Documents\GitHub\BWTA\lib\Release;C:\Program Files %28x86%29\BWAPI\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -73,7 +74,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>false</SDLCheck>
-      <AdditionalIncludeDirectories>C:\Program Files %28x86%29\BWAPI\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\colin_000\Documents\GitHub\BWTA\include;C:\Program Files %28x86%29\BWAPI\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <PreprocessorDefinitions>NOMINMAX;WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
@@ -84,14 +85,17 @@
       <AdditionalDependencies>BWAPI.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <SubSystem>Windows</SubSystem>
       <ImportLibrary>$(IntDir)$(TargetName).lib</ImportLibrary>
-      <AdditionalLibraryDirectories>C:\Program Files %28x86%29\BWAPI\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:\Users\colin_000\Documents\GitHub\BWTA\lib\Release;C:\Program Files %28x86%29\BWAPI\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="base\BulidingManager.cpp" />
     <ClCompile Include="base\ProductionManager.cpp" />
+    <ClCompile Include="base\WorkerData.cpp" />
     <ClCompile Include="base\WorkerManager.cpp" />
     <ClCompile Include="CombatCommander.cpp" />
+    <ClCompile Include="Common.cpp" />
+    <ClCompile Include="Dll.cpp" />
     <ClCompile Include="GameCommander.cpp" />
     <ClCompile Include="NagglfarModule.cpp" />
     <ClCompile Include="ScoutManager.cpp" />
@@ -99,8 +103,10 @@
   <ItemGroup>
     <ClInclude Include="base\BuildingManager.h" />
     <ClInclude Include="base\ProductionManager.h" />
+    <ClInclude Include="base\WorkerData.h" />
     <ClInclude Include="base\WorkerManager.h" />
     <ClInclude Include="CombatCommander.h" />
+    <ClInclude Include="Common.h" />
     <ClInclude Include="GameCommander.h" />
     <ClInclude Include="NagglfarModule.h" />
     <ClInclude Include="ScoutManager.h" />

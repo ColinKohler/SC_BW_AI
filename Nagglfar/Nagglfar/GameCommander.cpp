@@ -7,5 +7,5 @@ GameCommander::GameCommander() {
 }
 
 void GameCommander::update() {
-
+	workerManager.update();
 }	

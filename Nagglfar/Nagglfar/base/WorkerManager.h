@@ -1,5 +1,6 @@
 #pragma once
 
+#include "../Common.h"
 #include "BuildingManager.h"
 
 namespace NagglfarBot {
@@ -7,6 +8,14 @@ namespace NagglfarBot {
 
 	public:
 		WorkerManager();
+		void update();
+
+		void updateWorkerStatus();
+		void handleIdleWorkers();
+		void handleGasWorkers();
+		void handleMoveWorkers();
+		void handleCombatWorkers();
+		void handleRepairWorkers();
 	};
 
 }

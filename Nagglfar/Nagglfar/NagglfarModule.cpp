@@ -1,10 +1,12 @@
 #include "NagglfarModule.h"
+#include "Common.h"
 #include <iostream>
 
 using namespace NagglfarBot;
 
-void Nagglfar::onStart() {
+void NagglfarModule::onStart() {
 	// Print useful information
+	BWAPI::Broodwar->sendText("Test");
 	BWAPI::Broodwar << "The map is" << BWAPI::Broodwar->mapName() << "!" << std::endl;
 	if (BWAPI::Broodwar->enemy())
 		BWAPI::Broodwar << "The matchup is " << BWAPI::Broodwar->self()->getRace() << " vs " << BWAPI::Broodwar->enemy()->getRace() << std::endl;
@@ -20,44 +22,44 @@ void Nagglfar::onStart() {
 	//BWTA::analyze();
 }
 
-void Nagglfar::onEnd(bool isWinner) {
+void NagglfarModule::onEnd(bool isWinner) {
 	if (isWinner) {
 		// Log your win!
 	}
 }
 
-void Nagglfar::onFrame() {
+void NagglfarModule::onFrame() {
 	gameCommander.update();
 }
 
-void Nagglfar::onUnitDiscover(BWAPI::Unit unit) {
+void NagglfarModule::onUnitDiscover(BWAPI::Unit unit) {
 
 }
 
-void Nagglfar::onUnitEvade(BWAPI::Unit unit) {
+void NagglfarModule::onUnitEvade(BWAPI::Unit unit) {
 
 }
 
-void Nagglfar::onUnitShow(BWAPI::Unit unit) {
+void NagglfarModule::onUnitShow(BWAPI::Unit unit) {
 
 }
 
-void Nagglfar::onUnitHide(BWAPI::Unit unit) {
+void NagglfarModule::onUnitHide(BWAPI::Unit unit) {
 
 }
 
-void Nagglfar::onUnitCreate(BWAPI::Unit unit) {
+void NagglfarModule::onUnitCreate(BWAPI::Unit unit) {
 
 }
 
-void Nagglfar::onUnitDestroy(BWAPI::Unit unit) {
+void NagglfarModule::onUnitDestroy(BWAPI::Unit unit) {
 
 }
 
-void Nagglfar::onUnitMorph(BWAPI::Unit unit){
+void NagglfarModule::onUnitMorph(BWAPI::Unit unit){
 
 }
 
-void Nagglfar::onUnitComplete(BWAPI::Unit unit) {
+void NagglfarModule::onUnitComplete(BWAPI::Unit unit) {
 
 }
