@@ -3,10 +3,16 @@
 using namespace NagglfarBot;
 
 WorkerManager::WorkerManager() {
-
+	for (auto &u : BWAPI::Broodwar->self()->getUnits()) {
+		if (u->getType().isWorker()) {
+			workerData.addWorker(u, WorkerData::Idle);
+		}
+	}
 }
 
 void WorkerManager::update() {
+
+
 	// worker bookkeeping
 	updateWorkerStatus();
 
@@ -31,17 +37,11 @@ void WorkerManager::updateWorkerStatus() {
 }
 
 void WorkerManager::handleIdleWorkers() {
-	// super rough stuff
-	for (auto &u : BWAPI::Broodwar->self()->getUnits()) {
-		if (u->getType().isWorker()) {
-			if (u->isIdle()) {
-				if (u->isCarryingGas() || u->isCarryingMinerals()) {
-					u->returnCargo();
-				}
-				else {
-					u->gather(u->getClosestUnit(BWAPI::Filter::IsMineralField || BWAPI::Filter::IsRefinery));
-				}
-			}
+	for (BWAPI::UnitInterface* worker : workerData.getWorkers()) {
+		if (workerData.getWorkerJob(worker) == WorkerData::Idle) {
+			BWAPI::UnitInterface* minField = worker->getClosestUnit(BWAPI::Filter::IsMineralField);
+			worker->rightClick(minField);
+			workerData.setWorkerJob(worker, WorkerData::Minerals);
 		}
 	}
 }
